@@ -27,7 +27,7 @@ st.title("Калькулятор экономии на инвестициях в
 # Входные данные
 avg_salary = st.number_input("Средняя заработная плата ($):", min_value=0.0, value=1500.0, step=100.0)
 employees = st.number_input("Количество сотрудников:", min_value=1, value=100)
-investment = st.number_input("Сумма вклада в ментальное и психическое здоровье ($):", min_value=0.0, value=10000.0, step=1000.0)
+investment = st.number_input("Сумма вклада в ментальное и психическое здоровье ($) в год:", min_value=0.0, value=10000.0, step=1000.0)
 
 # Расчет
 productivity_boost, turnover_reduction, sick_leave_reduction, productivity_gain, turnover_savings, sick_leave_savings, total_savings, savings_per_employee = calculate_savings(avg_salary, employees, investment)
